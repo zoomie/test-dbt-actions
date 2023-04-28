@@ -1,5 +1,5 @@
-name: GitHub Actions Demo
-run-name: Running dbt update for ${{ github.actor }} 🚀
+name: Auto deploy dbt models in data_warehouse folder
+run-name: Auto deploy dbt models for ${{ github.actor }} 🚀
 on:
   push:
     paths:
