@@ -3,7 +3,7 @@ run-name: Running dbt update for ${{ github.actor }} 🚀
 on:
   push:
     paths:
-      - 'data_warehouise/**'
+      - 'data_warehouse/**'
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
