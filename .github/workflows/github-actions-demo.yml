@@ -15,7 +15,7 @@ jobs:
         id: dbt-run
         uses: mwhitaker/dbt-action@master
         with:
-          dbt_command: "dbt -h; ls"
+          dbt_command: "dbt -h"
           dbt_project_folder: "data_warehouse"
         env:
           DBT_BIGQUERY_TOKEN: ${{ secrets.DBT_BIGQUERY_TOKEN }}
