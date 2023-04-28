@@ -10,7 +10,7 @@ jobs:
 
       - name: dbt-run
         id: dbt-run
-        uses: mwhitaker/dbt-action@fishtown-v0.19.1
+        uses: mwhitaker/dbt-action@master
         with:
           dbt_command: "dbt -h"
           dbt_project_folder: "."
