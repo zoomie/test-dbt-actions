@@ -17,3 +17,5 @@ jobs:
         with:
           dbt_command: "dbt -h"
           dbt_project_folder: "data_warehouse"
+        env:
+          DBT_BIGQUERY_TOKEN: ${{ secrets.DBT_BIGQUERY_TOKEN }}
