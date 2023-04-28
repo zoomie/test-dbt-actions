@@ -16,4 +16,4 @@ jobs:
         uses: mwhitaker/dbt-action@master
         with:
           dbt_command: "dbt -h"
-          dbt_project_folder: "."
+          dbt_project_folder: "data_warehouse"
