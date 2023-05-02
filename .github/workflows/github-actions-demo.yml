@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - env:
-          TEST_NORMAL_ENV: "This is a test"
-          TEST_SECRET: {{ secrets.TEST_SECRET }}
       - run: echo "The job was automatically triggered by a ${{ github.event_name }} event."
       - run: env | grep -i TEST
+        env:
+          TEST_NORMAL_ENV: "This is a test"
+          TEST_SECRET: {{ secrets.TEST_SECRET }}
