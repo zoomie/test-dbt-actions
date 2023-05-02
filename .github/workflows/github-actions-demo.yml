@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'data_warehouse/**'
+      - '**'
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -13,9 +14,9 @@ jobs:
 
       - name: dbt-run
         id: dbt-run
-        uses: mwhitaker/dbt-action@master
+        # uses: mwhitaker/dbt-action@master
         with:
-          dbt_command: "dbt -h"
+          dbt_command: "env"
           dbt_project_folder: "data_warehouse"
         env:
-          DBT_BIGQUERY_TOKEN: ${{ secrets.DBT_BIGQUERY_TOKEN }}
+          DBT_BIGQUERY_TOKEN: ${{ secrets.TEST_SECRET }}
