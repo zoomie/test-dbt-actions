@@ -14,7 +14,6 @@ jobs:
 
       - name: dbt-run
         id: dbt-run
-        # uses: mwhitaker/dbt-action@master
         uses: ubuntu-latest
         with:
           dbt_command: "env"
