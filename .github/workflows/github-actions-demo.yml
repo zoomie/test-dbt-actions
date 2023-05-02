@@ -10,13 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v2
-
-      - name: dbt-run
-        id: dbt-run
-        uses: ubuntu-latest
-        with:
-          dbt_command: "env"
-          dbt_project_folder: "data_warehouse"
-        env:
-          DBT_BIGQUERY_TOKEN: ${{ secrets.TEST_SECRET }}
+      - run: echo "The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: ls
+      - run: env 
