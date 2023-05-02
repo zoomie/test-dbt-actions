@@ -14,4 +14,4 @@ jobs:
       - run: env | grep -i TEST
         env:
           TEST_NORMAL_ENV: "This is a test"
-          TEST_SECRET: {{ secrets.TEST_SECRET }}
+          TEST_SECRET: ${{ secrets.TEST_SECRET }}
